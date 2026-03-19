@@ -1,0 +1,12 @@
+services:
+  mfem:
+    image: ghcr.io/mfem/containers/developer-cpu:latest
+    container_name: mfem-dev
+    cap_add:
+      - SYS_PTRACE
+    ports:
+      - "3000:3000"
+      - "8000:8000"
+      - "8080:8080"
+    volumes:
+      - .:/home/developer/work
