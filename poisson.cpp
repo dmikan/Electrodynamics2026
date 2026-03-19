@@ -55,15 +55,15 @@ int main()
 
    // 8. Send to GLVIS (To see it in the browser)
    char vishost[] = "localhost";
-   int  visport   = 8080;
+   int  visport   = 19916; 
    mfem::socketstream sol_sock(vishost, visport);
    
    if (sol_sock.is_open())
    {
       sol_sock.precision(8);
-      // Send the mesh and the solution to the server
-      sol_sock << "solution\n" << mesh << x << std::flush;
-      std::cout << "Visualization sent to GLVis server." << std::endl;
+      sol_sock << "solution\n" << mesh << x << "keys R2mc\n" << std::flush;
+      
+      std::cout << "Visualization sent to GLVis server on port " << visport << "." << std::endl;
       std::cout << "Press Enter to close the program and the connection..." << std::endl;
       std::cin.get();
    }
