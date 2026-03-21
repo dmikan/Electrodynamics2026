@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/euler/mfem/**",
+                "/usr/lib/x86_64-linux-gnu/openmpi/include/**",
+                "/usr/include/**",
+                "${default}",
+                "/usr/local/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-clang-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "/home/euler/mfem"
+                ]
+            }
+        }
+    ],
+    "version": 4
+}
