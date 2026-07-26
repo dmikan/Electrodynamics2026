@@ -1,0 +1,25 @@
+# Entornos Virtuales de Python
+env/
+venv/
+.venv/
+ENV/
+
+# Configuración de IDE y Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Archivos de salida y simulación MFEM
+*.gf
+*.mesh
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
