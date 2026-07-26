@@ -2,7 +2,6 @@
 
 Este repositorio contiene la implementación numérica para la resolución de problemas electrostáticos tridimensionales mediante el **Método de los Momentos (MoM)** en Python y el **Método de Elementos Finitos (FEM)** en C++ utilizando la biblioteca **MFEM**.
 
-El proyecto está diseñado de forma modular, libre de redundancias y optimizado para ejecutarse fácilmente.
 
 ---
 
@@ -50,15 +49,12 @@ Electrodynamics2026/
 
 ---
 
-## 🚀 Guía Rápida para el Profesor
+## Guía de ejecución
 
 Para reproducir todos los análisis y generar automáticamente las 7 gráficas principales en la carpeta `output/`, siga los siguientes pasos:
 
-### 1. Requisitos Previos
-Asegúrese de tener **Python 3.8+** instalado.
-
-### 2. Instalación de Dependencias
-Instale los paquetes requeridos (`numpy`, `matplotlib`, `scipy`) ejecutando en su terminal:
+### 1. Instalación de Dependencias
+Instale los paquetes requeridos (`numpy`, `matplotlib`, `scipy`) ejecutando en terminal:
 
 ```bash
 pip install -r requirements.txt
@@ -71,7 +67,7 @@ Ejecute el script principal `main.py`:
 python main.py
 ```
 
-Al finalizar la ejecución, se mostrarán en consola los cálculos numéricos de capacitancia y reciprocidad, y todas las figuras resultantes quedarán guardadas automáticamente en la carpeta **`output/`**.
+Al finalizar la ejecución, se mostra en consola los cálculos numéricos de capacitancia y reciprocidad, y todas las figuras resultantes quedan guardadas automáticamente en la carpeta **`output/`**.
 
 ---
 
@@ -89,7 +85,7 @@ Al finalizar la ejecución, se mostrarán en consola los cálculos numéricos de
 
 ---
 
-## 💻 Módulo C++ MFEM (Elementos Finitos)
+## 💻 Módulo C++ MFEM (Elementos Finitos) (opcional)
 
 La carpeta `mfem/` contiene dos aplicaciones en C++ diseñadas para resolver la Ecuación de Poisson $\nabla^2 V = -f$:
 
@@ -108,6 +104,3 @@ docker exec -it mfem-dev bash
 Dentro del contenedor, navegue a `poisson_constant` o `poisson_delta` y ejecute `make` para compilar la aplicación C++.
 
 ---
-
-## ✉️ Contacto
-Proyecto desarrollado para la materia de Electrodinámica (2026).
